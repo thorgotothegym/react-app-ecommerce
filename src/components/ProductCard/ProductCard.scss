@@ -1,0 +1,80 @@
+@import "../../styles/index.scss";
+
+.showcase {
+  background-color: #f1f1f1;
+  .showcase__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 100rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+}
+
+.product-slider {
+  background-color: $background-gray;
+  grid-row: 1;
+  border-radius: 5px;
+  #addToCart {
+    background-color: pink;
+  }
+  .product {
+    margin-right: $l-size;
+    text-align: center;
+  }
+
+  .product__img-wrapper {
+    background-color: $white;
+    cursor: pointer;
+    margin-bottom: $xs-size;
+
+    img {
+      overflow: hidden;
+      height: 25.5rem;
+      padding: $xl-size;
+      transition: 0.3s all ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    .product__img-wrapper__eye {
+      position: relative;
+      top: 150px;
+      height: 50px;
+      background-image: url("../../assets/icons/ojo.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.product__hover-details {
+  bottom: 14rem;
+  display: flex;
+  left: 9.5rem;
+  position: relative;
+
+  div {
+    background-color: $white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+  }
+
+  div:first-child {
+    margin-right: 1rem;
+  }
+}
+
+.disabled {
+  display: none;
+}
+
+.product__remove {
+  color: $font-gray;
+  cursor: pointer;
+
+  * {
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,46 @@
+@import '../../styles/base/vars';
+@import '../../styles/mixin/mixin';
+
+.CheckOut__line {
+    background-color: $background-gray;
+    height: $xs-size;
+    margin-bottom: $s-size;
+    @include generic-container;
+}
+.product-list {
+    .product {
+      @include flex(wrap, center, space-between);
+      padding: 0 $l-size;
+    }
+  
+    .product__img-wrapper {
+      img {
+        background-color: $white;
+        height: 18rem;
+        padding: $l-size;
+      }
+    }
+  }
+  
+  .product__title {
+    font-size: $text-small;
+    text-align: left;
+  }
+  
+  .product__price {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .product__starts {
+    bottom: 5rem;
+    color: #ffd200;
+    font-size: 12px;
+    left: $m-size;
+    padding: 0;
+    position: relative;
+  
+    img {
+      width: 20px;
+    }
+  }

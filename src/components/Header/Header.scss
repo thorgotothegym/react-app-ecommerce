@@ -1,0 +1,54 @@
+@import "../../styles/index.scss";
+
+.header {
+    padding: $s-size 0;
+    @include generic-container;
+  }
+  
+  .header .container {
+    @include flex(wrap, center, space-between);
+  }
+  
+  .header__logo {
+    width: 18rem;
+  }
+  
+  .header-cart {
+    @include flex(wrap, flex-end);
+  }
+  
+  .header-cart__link {
+    margin-right: 0.6rem;
+  }
+  
+  .header-cart__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .header-cart__counter {
+    position: relative;
+    background-color: $black;
+    color: $white;
+    padding: 1px 5px;
+    font-size: $xs-size;
+    line-height: $xs-size;
+    border-radius: 100px;
+    bottom: 20px;
+    right: 11px;
+  }
+  
+  .header-cart__info * {
+    display: block;
+    line-height: $m-size;
+  }
+  
+  .header-cart__price {
+    color: $font-gray;
+    font-size: 1.2rem;
+  }
+  
+  .header-cart__text {
+    font-size: $text-extra-small;
+    font-weight: bold;
+  }

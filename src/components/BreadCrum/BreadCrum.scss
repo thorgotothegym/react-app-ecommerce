@@ -1,0 +1,25 @@
+@import "../../styles/index.scss";
+
+.breadcrumb {
+  background-color: $background-gray;
+  padding-bottom: $s-size;
+  @include generic-container;
+}
+
+.breadcrumb .container {
+  @include flex(wrap, center, space-between);
+}
+
+.breadcrumbs {
+  list-style: none;
+  padding: 0;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+  font-size: $text-small;
+
+  span {
+    padding: 0 $xs-size;
+  }
+}

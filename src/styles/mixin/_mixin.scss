@@ -1,0 +1,37 @@
+@import '../base/vars';
+
+@mixin flex(
+  $wrap-direction: false,
+  $align-items: false,
+  $justify-content: false
+) {
+  @if $align-items {
+    align-items: $align-items;
+  }
+
+  display: flex;
+
+  @if $wrap-direction {
+    flex-wrap: $wrap-direction;
+  }
+
+  @if $justify-content {
+    justify-content: $justify-content;
+  }
+}
+
+@mixin border-box() {
+  border-bottom: 1px solid $border-gray;
+  border-left: 1px solid $border-gray;
+  border-right: 1px solid $border-gray;
+  border-top: 4px solid $border-gray;
+  box-shadow: 1px 2px 1px rgb(0 0 0 / 2%);
+}
+
+@mixin generic-container() {
+  .container {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 $s-size;
+  }
+}

@@ -1,0 +1,28 @@
+@import './vars';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 10px */ 
+}
+
+body {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: $text-normal;
+    line-height: 2.6rem;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.selected {
+    font-weight: 700;
+}
